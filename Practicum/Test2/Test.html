@@ -1,0 +1,529 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Web Page</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>About Us</h2>
+      <p>We are a company that specializes in web development.</p>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 My Web Page</p>
+    </footer>
+  </body>
+</html> -->
+<!-- ----------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- The main title-->
+    <title>How to Take Pictures With Your Phone</title>
+    <link
+      rel="stylesheet"
+      href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- this is the container for all the content on the webpage; we need it in order to assign
+ CSS properties to the page using a class selector rather than the body element -->
+
+    <div class="page">
+      <!-- this is the menu that's on the left-hand side so far -->
+      <nav class="menu">
+        <!-- the block class menu__item denotes a container with a menu item, while the modifier menu__item_theme_landscape shows the theme of the point (landscape) -->
+        <div class="menu__item menu__item_theme_landscape">
+          <!-- link to the website page about the landscape with a hash (#) in place of the address for now -->
+          <a href="#" class="menu__link menu__link_theme_landscape"
+            >Landscape</a
+          >
+
+          <!-- image symbolizing the theme of the menu point (landscape); it'll show up next to the link in the future when the cursor hovers over it -->
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_landscape_hover.jpg"
+            alt=""
+            class="menu__picture menu__picture_theme_landscape"
+          />
+        </div>
+        <!-- the end of the container with the menu point; the other three points are set up the same way -->
+
+        <div class="menu__item menu__item_theme_portrait">
+          <a href="#" class="menu__link menu__link_portrait">Portrait</a>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_portrait_hover.jpg"
+            alt=""
+            class="menu__picture menu__picture_theme_portrait"
+          />
+        </div>
+        <div class="menu__item menu__item_theme_viewpoint">
+          <a href="#" class="menu__link menu__link_viewpoint">Perspective</a>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_viewpoint_hover.jpg"
+            alt=""
+            class="menu__picture menu__picture_theme_viewpoint"
+          />
+        </div>
+        <div class="menu__item menu__item_theme_expression">
+          <a href="#" class="menu__link menu__link_expression">Expression</a>
+          <img
+            src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_expression_hover.jpg"
+            alt=""
+            class="menu__picture menu__picture_theme_expression"
+          />
+        </div>
+      </nav>
+
+      <!-- main content area -->
+      <section class="content">
+        <!-- container with page text and illustrations, needed to manage their common properties -->
+        <div class="content__container">
+          <!-- container with introduction -->
+          <div class="content__head">
+            <!-- the page heading has a first level of h1 -->
+            <!-- all headings have the class "content__title" and are differentiated by modifiers; the modifier _item_main denotes the heading for all the text on the page -->
+            <h1 class="content__title content__title_item_main">
+              The Idea Behind Pictures
+            </h1>
+
+            <!-- normal paragraph text with class "content__text" -->
+            <p class="content__text">
+              Pictures that contain mysterious elements lead people to be active
+              viewers. No matter which device or lens you use, solving a puzzle
+              is a big part of the allure for most professional photographers.
+              Viewers will feel great deal of accomplishment and appreciation
+              when unraveling the hidden message in your image. Crafting a
+              journey of thought and feeling for your audience can be rewarding
+              exercise both for you and for them.
+            </p>
+
+            <!-- a quote given the special class "content__quote" so a selector for the class can be used to give all quotes the same format -->
+            <p class="content__quote">
+              "Sight is the quickest action a human can perform, but at the same
+              time, we only see a single object."
+
+              <!-- the span tag isolates the area of the paragraph that shows the source of the quote, with that area given the class "content__quote-origin" -->
+              <span class="content__quote-origin"
+                >Leonardo da Vinci, A Treatise on Painting</span
+              >
+            </p>
+          </div>
+          <!-- end of the container with the introduction -->
+
+          <!-- container with the first chapter -->
+          <div class="content__item">
+            <!-- names of chapters, sections — h2 second-level headings, all of them given the general class "content__title_item_sub" -->
+            <h2 class="content__title content__title_item_sub">
+              Controlling the Direction of Gaze
+            </h2>
+
+            <!-- subsection names are h3 third-level headings; all of them given the general class "content__title_item_method"; note the modifier syntax with the words method and name: the single underscore before the name and the dash between the two halves of the name _method-name -->
+            <h3 class="content__title content__title_item_method">Framing</h3>
+            <p class="content__text">
+              Frames emphasize the overall importance of the objects located
+              within them. The framing technique can be useful when attempting
+              to take an original shot of something very well-known. The Eiffel
+              Tower, for example, can look much more interesting when
+              photographed through a window. Arches, shutters, doors, and holes
+              can all serve as a frame. If the picture is especially
+              attention-grabbing, you can make the frame thinner. On the other
+              hand, if it's just a picture of a blue sky, thicker frames can be
+              appreciated for their own value.
+            </p>
+
+            <!-- container with an illustration; the rest are set up the same way -->
+            <div class="content__image">
+              <!-- an illustration with text; the rest are set up the same way -->
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_frame.jpg"
+                alt=""
+                class="content__image-item"
+              />
+
+              <!-- the covering area that will lie on top of the image when the cursor hovers over it -->
+              <div class="content__image-cover">
+                <!-- text for the illustration caption -->
+                <p class="content__image-name">Nighttime Smile, Moscow</p>
+              </div>
+              <!-- end of covering area -->
+            </div>
+            <!-- end of container with illustration -->
+
+            <h3 class="content__title content__title_item_method">Veiling</h3>
+            <p class="content__text">
+              Semi-transparent content placed in the foreground can also attract
+              a viewer's attention. Hazy or foggy effects, for example, can help
+              the artist redirect the spectator's eye from the front to the back
+              of the image. The part of the image with the most emphasis when
+              using a technique such as this is generally one that's hidden.
+              Slightly hiding our subjects creates a visual appeal, drawing out
+              the audience's curiosity.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_cover.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">
+                  Volleyball in the Forest, Serebryany Bor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content__item">
+            <h2 class="content__title content__title_item_sub">
+              Vector indication
+            </h2>
+            <p class="content__text">
+              Vectors in photography act as visual guides for the eye. They can
+              be in the form of lines, or a difference in lighting, color, or
+              sharpness. These lure the spectator to observe what's important.
+              For more optimal results, it's good to sometimes use two different
+              kinds of vectors that will eventually level each other out. In
+              this particular case, the onlooker will follow one vector to the
+              very end before returning back to the beginning alongside the
+              other. It's a fun little trip around the picture that leads you to
+              make a series of fascinating discoveries along the way. Vectors
+              direct attention toward the point where they converge or diverge.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector1.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Flare, Moscow</p>
+              </div>
+            </div>
+            <p class="content__text">
+              One of the most effective vectors you can use is one that focuses
+              on the direction in which someone in the picture is looking, a
+              technique commonly used in Renaissance artwork. Two intersecting
+              glares can tell you a lot about the subjects' relationship.
+              Alternatively, glimpses that meet somewhere can also point out
+              what's most important in an image. Viewers will happily follow
+              whichever method you choose in an attempt to solve the riddle.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_vector.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Sports Ground, Votkinsk</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of container with first chapter -->
+
+          <!-- container with second chapter -->
+          <div class="content__item">
+            <h2 class="content__title content__title_item_sub">
+              Managing calculations
+            </h2>
+            <p class="content__text">
+              As surprising as it may sound, people are always counting to
+              themselves and looking for geometric shapes all around them.
+              Finding such a geometric shape hidden in a picture makes the
+              viewer feel like a detective. It's an exhilarating flow of
+              positive emotions that can linger long after looking at the image.
+            </p>
+            <h3 class="content__title content__title_item_method">Triangles</h3>
+            <p class="content__text">
+              Triangles made up of random elements stand out. Our imagination
+              even likes making up nonexistent triangles.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_triangle.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">
+                  Winter Sports, Vesennyaya Station
+                </p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">
+              Strong curves
+            </h3>
+            <p class="content__text">
+              The graphical perfection of the parabola and hyperbola is
+              impressive.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parabola.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">
+                  After the Rain, Poklonnaya Hill
+                </p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">
+              Parallel lines
+            </h3>
+            <p class="content__text">
+              They happen so rarely in nature that you want to find out who put
+              them there.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_parallel.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Metro Sunset, Moscow</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">
+              Decorations
+            </h3>
+            <p class="content__text">
+              It's always fun to discover decorations made out of similar
+              objects.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_ornament.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">September, Moscow</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Rhythm</h3>
+            <p class="content__text">
+              Identical objects receding off into the background let you
+              estimate distance and height. Viewers always appreciate this.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_rythm.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Geometry of Space, Sochi</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">
+              Reflections
+            </h3>
+            <p class="content__text">
+              Everyone likes trying to figure out which side of the picture is
+              the reflection. That's especially fun when there are multiple
+              reflections.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_reflection.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Landmark, Moscow</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of container with second chapter -->
+
+          <!-- container with the third chapter -->
+          <div class="content__item">
+            <h2 class="content__title content__title_item_sub">
+              Managing emotions
+            </h2>
+            <p class="content__text">
+              The emotional background is created subconsciously. If you analyze
+              the contents, the dominant color exerts a psychological influence
+              beyond your control. The person behind the shot can create a
+              certain mood by selecting the colors.
+            </p>
+            <h3 class="content__title content__title_item_method">Red</h3>
+            <p class="content__text">
+              The color of desire and passion. The red color carries with it an
+              energy, life force, and danger all at the same time.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_red.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Riga Express, Moscow</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Yellow</h3>
+            <p class="content__text">
+              A color that boosts the mood and appetite. Everything that's
+              yellow attracts the viewer with a smile that says life is
+              beautiful.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_yellow.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Glass Distortion, Izhevsk</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Green</h3>
+            <p class="content__text">
+              The color of harmony and growth. Bright green is perfect for
+              children playing out in nature, creating the impression of growing
+              in safety. It's no surprise that the signal to go is a green
+              light.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_green.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Morning Practice, Moscow</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Blue</h3>
+            <p class="content__text">
+              The color of confidence and trust. Unlike yellow, blue pulls away
+              from the viewer, creating a light sense of sadness.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_blue.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Airport, Izhevsk</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Purple</h3>
+            <p class="content__text">
+              This color creates an impression of dignity, greatness (especially
+              with a scarlet shade), self-sufficiency, and creativity.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_violet.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Sunset Port, Novorossiysk</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">White</h3>
+            <p class="content__text">
+              The color white means different things depending on the culture,
+              though it most often stands for goodness, light, and life,
+              including eternal life beyond the grave.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_white.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Winter River, Veretyevo</p>
+              </div>
+            </div>
+            <h3 class="content__title content__title_item_method">Black</h3>
+            <p class="content__text">
+              Black often comes with the idea of evil and death, though as the
+              color of clothing and electronics it more frequently gives an
+              impression of order, elegance, and mysterious power.
+            </p>
+            <div class="content__image">
+              <img
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/positioning/moved_black.jpg"
+                alt=""
+                class="content__image-item"
+              />
+              <div class="content__image-cover">
+                <p class="content__image-name">Embankment, Moscow</p>
+              </div>
+            </div>
+          </div>
+          <!-- end of container with the third chapter -->
+
+          <!-- container with conclusion -->
+          <div class="content__item">
+            <h2 class="content__title content__title_item_sub">Share!</h2>
+            <p class="content__text">
+              Mobile pictures double up on the fun — a great original shot
+              followed by the endless social media conversations about it.
+            </p>
+
+            <!-- text of the second quote with the same class as the first -->
+            <p class="content__quote">
+              "Painting with others is better than painting alone — jealousy
+              pushes you to be among those more praised than you, the praise of
+              others spurring you on all the while."
+              <span class="content__quote-origin"
+                >Leonardo da Vinci, A Treatise on Painting</span
+              >
+            </p>
+            <p class="content__text">
+              Don't forget to share your work since the number of likes and
+              questions you get will tell you what you're doing right. And when
+              you get enough shots, you can look back at them and learn
+              something new about yourself. For example, ask yourself what it is
+              about the ideas you have that attracts you. What do you think
+              about the things you take pictures of? How has your attitude
+              changed with the passing of time, and how have you yourself
+              changed? You may find the answers in your work.
+            </p>
+          </div>
+          <!-- end of container with the conclusion -->
+
+          <!-- container with information about authors and copyrights -->
+          <div class="content__item content__item_type_copyright">
+            <!-- text of the line with author information -->
+            <p class="content__text content__text_type_copyright">
+              Photos: Sergey Nugaev
+            </p>
+            <p class="content__text content__text_type_copyright">
+              Text: Mikhail Shifrin
+            </p>
+            <p class="content__text content__text_type_copyright">
+              © Practicum
+            </p>
+          </div>
+          <!-- end of the container with information about authors and copyrights -->
+        </div>
+        <!-- end of the container with text and illustrations -->
+      </section>
+      <!-- end of special content area -->
+    </div>
+    <!-- end of the container for all the content on the webpage -->
+  </body>
+</html>
+<!-- ---------------------------------------------------------------------- -->
